@@ -1,4 +1,4 @@
-import { ProblemDefinitionFactory } from 'src/problem-definition.factory';
+import { DefinitionFactory } from 'src/definition.factory';
 import { ProblemDefinition } from 'src/models/problem-definition';
 import { HttpStatus } from 'src/models/http-status';
 
@@ -23,11 +23,11 @@ const defs: ProblemDefinition[] = [
   }
 ];
 
-describe('ProblemDefinitionFactory', () => {
-  let factory: ProblemDefinitionFactory;
+describe('DefinitionFactory', () => {
+  let factory: DefinitionFactory;
 
   beforeEach(() => {
-    factory = new ProblemDefinitionFactory();
+    factory = new DefinitionFactory();
   });
 
   // -- register() -------------------------
