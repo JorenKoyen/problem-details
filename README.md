@@ -1,6 +1,12 @@
 # Problem Details
+[![npm version](https://badge.fury.io/js/problem-details.svg)](https://badge.fury.io/js/problem-details)
 
 HTTP problem details model based on [RFC7807](https://tools.ietf.org/html/rfc7807). This package wraps the default `Error` object to throw better defined errors which are previously registered. This ensures that thrown errors are more consistent.
+
+### Install
+```bash
+npm install --save problem-details
+```
 
 ### Basic Example
 
