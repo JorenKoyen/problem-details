@@ -2,7 +2,7 @@ import { ProblemDefinition } from './models/problem-definition';
 import { validateSync } from 'class-validator';
 import { plainToClass } from 'class-transformer';
 
-export class ProblemDefinitionFactory {
+export class DefinitionFactory {
   /**
    * Stores all the registered problem details to help
    * aid the developer in reusing exceptions.
