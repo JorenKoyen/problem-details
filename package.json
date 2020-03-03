@@ -1,7 +1,7 @@
 {
   "name": "problem-details",
   "version": "0.0.3",
-  "description": "HTTP problem details model based on RFC7808",
+  "description": "HTTP problem details model based on RFC7807",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -11,11 +11,17 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JorenKoyen/problem-details.git"
+  },
   "keywords": [
     "HTTP",
     "problem",
     "details",
-    "API"
+    "API",
+    "RFC7807",
+    "error"
   ],
   "author": "Joren Koyen",
   "license": "ISC",
