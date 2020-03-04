@@ -1,4 +1,4 @@
-import { DefinitionFactory } from 'src/definition.factory';
+import { DefinitionFactory } from 'src/factory/definition.factory';
 import { ProblemDefinition } from 'src/models/problem-definition';
 import { HttpStatus } from 'src/models/http-status';
 

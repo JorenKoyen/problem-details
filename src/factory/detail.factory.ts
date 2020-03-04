@@ -1,7 +1,7 @@
 import { DefinitionFactory } from './definition.factory';
-import { ProblemDetail } from './models/problem-detail';
+import { ProblemDetail } from '../models/problem-detail';
 import { v4 as uuid } from 'uuid';
-import { ProblemDefinition } from './models/problem-definition';
+import { ProblemDefinition } from '../models/problem-definition';
 export class DetailFactory {
   private readonly definitionFactory: DefinitionFactory;
 

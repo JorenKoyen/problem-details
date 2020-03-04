@@ -1,6 +1,6 @@
 import { DetailFactory } from './detail.factory';
 import { DefinitionFactory } from './definition.factory';
-import { ProblemDetail } from './models/problem-detail';
+import { ProblemDetail } from '../models/problem-detail';
 
 describe('DetailFactory', () => {
   let detailFactory: DetailFactory;

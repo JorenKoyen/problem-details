@@ -123,4 +123,7 @@ dist/
 tmp/
 temp/
 
+# ignore build files
+build/
+
 # End of https://www.gitignore.io/api/node,linux
