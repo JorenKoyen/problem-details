@@ -1,9 +1,12 @@
 import { ExceptionFilter, ArgumentsHost, Catch } from '@nestjs/common';
 import { Request, Response } from 'express';
 import { ProblemDetail, ProblemDetailMessage } from '../models';
+import { FilterOptions } from './filter-options.interface';
 
 @Catch(ProblemDetail)
 export class ProblemDetailFilter implements ExceptionFilter {
+  constructor(private readonly options?: FilterOptions) {}
+
   /**
    * Handles a thrown ProblemDetail error in NestJS.
    * @param exception Thrown exception
@@ -20,6 +23,10 @@ export class ProblemDetailFilter implements ExceptionFilter {
       type: exception.type,
       identifier: exception.identifier
     };
+
+    if (this.options && this.options.errorHandler) {
+      this.options.errorHandler(message);
+    }
 
     response.status(exception.status).json(message);
   }
