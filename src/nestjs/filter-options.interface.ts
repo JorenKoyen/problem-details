@@ -1,4 +1,4 @@
-import { ProblemDetailMessage } from 'src/models';
+import { ProblemDetailMessage } from '../models';
 
 export interface FilterOptions {
   errorHandler?(problem: ProblemDetailMessage): void;
