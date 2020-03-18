@@ -1,6 +1,6 @@
 {
   "name": "problem-details",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "HTTP problem details model based on RFC7807",
   "main": "build/index.js",
   "types": "build/index.d.ts",
